@@ -12,7 +12,8 @@ public class PageContoller {
 	public ModelAndView index() {
 		
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("greeting", "Welcome to mvc");
+		mv.addObject("title", "Home");
+		mv.addObject("userClickHome", true);
 		return mv;
 	}
 }

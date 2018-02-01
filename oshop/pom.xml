@@ -1,28 +1,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-  <groupId>com.onlineshop</groupId>
-  <artifactId>oshop</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>oshop Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+	<groupId>com.onlineshop</groupId>
+	<artifactId>oshop</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>oshop Maven Webapp</name>
+	<url>http://maven.apache.org</url>
 
 	<!-- Version information will be stored here -->
 	<properties>
 		<javaee.version>7.0</javaee.version>
 		<spring.version>4.3.6.RELEASE</spring.version>
 		<spring.security.version>4.2.2.RELEASE</spring.security.version>
-		
+
 	</properties>
 
 	<dependencies>
 
-		<!-- Link backend project -->
+		<!--  backend linked -->
 		<dependency>
 			<groupId>com.onlineshop</groupId>
 			<artifactId>shoppingbackend</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+
 		</dependency>
 
 		<!-- JAVA EE -->
@@ -69,19 +70,19 @@
 		</dependency>
 
 		<!-- Spring Webflow -->
-	    <dependency>
-	        <groupId>org.springframework.webflow</groupId>
-	        <artifactId>spring-webflow</artifactId>
-	        <version>2.4.4.RELEASE</version>
-	    </dependency>
-	    
-	    <!-- Spring Security -->
+		<dependency>
+			<groupId>org.springframework.webflow</groupId>
+			<artifactId>spring-webflow</artifactId>
+			<version>2.4.4.RELEASE</version>
+		</dependency>
+
+		<!-- Spring Security -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
 			<version>${spring.security.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
@@ -93,8 +94,8 @@
 			<artifactId>spring-security-taglibs</artifactId>
 			<version>${spring.security.version}</version>
 		</dependency>
-	    
-	    
+
+
 	</dependencies>
 	<build>
 		<!-- Updated for the latest version of JAVA -->

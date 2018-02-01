@@ -20,8 +20,8 @@ $(function() {
 	
 	
 	
-	// solving the active menu problem
-	switch (menu) {
+	//active menu switch cases
+	switch (menu) {   //selects menu dynamically as clicked and highlight
 
 	case 'About Us':
 		$('#about').addClass('active');
@@ -39,7 +39,7 @@ $(function() {
 		$('#userModel').addClass('active');
 		break;		
 	default:
-		if (menu == "Home")
+		if (menu == "Home")  //will remove highlighted
 			break;
 		$('#listProducts').addClass('active');
 		$('#a_' + menu).addClass('active');
@@ -375,8 +375,6 @@ $(function() {
 	}
 		
 	
-	
-	/*------*/
 	/* for fading out the alert message after 3 seconds */
 	$alert = $('.alert');
 	if($alert.length) {
